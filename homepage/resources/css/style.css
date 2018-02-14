@@ -1,0 +1,348 @@
+/*///////////////BASIC SETUP////////////*/
+/*///////////////BASIC SETUP////////////*/
+/*///////////////BASIC SETUP////////////*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+ 
+body{
+    background-image: url(../img/paint.jpg);
+    background-size: 230px;
+    background-position: center;
+    height: 100%;
+} 
+/*   height: 165px;   */
+
+html{
+    background-color:#fff;
+    color: black;
+    font-family: "Raleway","Arial", sans-serif;
+    font-weight:300;
+    font-size: 30px;
+    text-rendering: optimizeLegibility;
+}
+
+.clearfix{zoom: 1}
+.clearfix:after{
+    content:'.';
+    clear:both;
+    display:block;
+    height:0;
+    visibility: hidden;
+}
+
+/*///////////////HEADER////////////*/
+/*///////////////HEADER////////////*/
+/*///////////////HEADER////////////*/
+
+header{
+    padding:25px;
+    height: 80px;
+    background-size: cover;
+    background-position: center;
+    text-align: left;
+    background-color: rgba(0,0,0,0.4);
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+/*background-image: linear-gradient(rgba(247, 144, 247, 0.2),rgba(182, 131, 182, 0.2)), url(../img/heaven.jpg);*/
+/*///////////////NAV////////////*/
+/*///////////////NAV////////////*/
+/*///////////////NAV////////////*/
+
+.nav{
+    display: flex;
+    justify-content: center;
+}
+
+.nav li:not(:last-child){
+    margin-right: 50px;
+}
+
+.nav-wrapper{
+
+    align-items: center;
+    display:flex;
+    justify-content: left;
+    margin-top: -30px;
+}
+
+.nav li:first-child{
+    margin-left: 100px;
+}
+
+.nav li{
+    width: 75px;
+    height:60px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav li a:link,
+.nav li a:visited{
+    font-size: 17px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: background-color 0.8s;
+}
+
+.nav li a:hover,
+.nav li a:active{
+    color: rgb(219, 192, 229);
+    text-decoration: none;
+    background-color: rgba(219, 232, 233, 0.1);
+    padding: 5px 5px;
+    border-radius: 200px;
+}
+/*rgb(133, 34, 133)*/
+
+.nav-wrapper ul{
+    display: inline-block;  
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    padding-left: 77px;
+    height:60px;
+    width:auto;
+    margin: 0 15px;
+}
+
+.search-box{
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+    width: 500px;
+    height: 60px;
+}
+
+.container-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*/////////////NEPTIS/////////*/
+/*/////////////NEPTIS/////////*/
+/*/////////////NEPTIS/////////*/
+
+.sziamed{
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sziamed i{
+    padding-left:-30px;
+    margin-top: 100px;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sziamed i:first-child{
+    margin-right: 15px;
+}
+
+.sziamed i:last-child{
+    margin-left: 15px;
+}
+/*////////////REUSABLECOMPONENTS/////////*/
+/*////////////REUSABLECOMPONENTS/////////*/
+/*////////////REUSABLECOMPONENTS/////////*/
+
+h1{
+    letter-spacing: 1px;
+    color: #fff;
+    padding-left:215px;
+    font-weight: 100;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+h3{
+    margin-top:93px;
+    font-weight:300;
+    font-size: 100px;
+    color:white;
+    letter-spacing: 10px;
+}
+
+.icon-small{
+    width: 50px;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.icon-big{
+    color:white;
+    width: 50px;
+    font-weight:300;
+    background-color: rgba(0,0,0,0.4);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+h2{
+    text-align:center;
+    margin-bottom: 20px;
+    color: white;
+    font-weight:100;
+}
+
+/*////////////PREVIEWS////////*/
+/*////////////PREVIEWS////////*/
+/*////////////PREVIEWS////////*/
+
+.previews{
+    margin-left: 90px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    width:92%;
+}
+
+.row-box{
+    padding-top: 20px;
+    padding-bottom: 1px;
+    display: block;
+    justify-content: center;
+    width: 90%;
+    background-color: rgba(0,0,0,0.4);
+    background-size:cover;
+    background-position: center; 
+    margin-bottom:30px;
+    border-radius: 10px;
+    transition: opacity 0.5s, background-color 0.5s;
+}
+
+.row-box:hover{
+    opacity: 0.9;
+    padding-top: 20px;
+    padding-bottom: 1px;
+    display: block;
+    justify-content: center;
+    width: 90%;
+    background-color: rgba(0,0,0,0.8);
+    background-size:cover;
+    background-position: center; 
+    margin-bottom:30px;
+    border-radius: 10px;
+}
+
+.add-right{
+    padding-top:-240px;
+    margin-left: 25px;
+    float:left;
+    width: 50%;
+}
+
+.add-left{
+    margin-top:-177px;
+    width: 50%;
+}
+
+.row-box img{
+    border-radius: 10px;
+    width:100%;
+    height: auto;
+    padding: 10px;
+}
+
+/*//////////////////FOOTER//////////////*/
+/*//////////////////FOOTER//////////////*/
+/*//////////////////FOOTER//////////////*/
+
+footer{
+    padding-top:-50px;
+    display:inline-flex;
+    align-items: center;
+    width:100%;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.f-n{
+    width:60%;
+}
+
+.c-n{
+    width: 40%;
+    float:right;
+}
+
+.footer-nav{
+    display:flex;
+    justify-content: center;
+}
+
+.footer-nav a:not(:last-child){
+    padding-right: 50px;
+    
+}
+
+.footer-nav a{
+    color: #fff;
+    padding-bottom: 19px;
+    font-weight: 100;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.4s;
+}
+
+.footer-nav a:hover{
+    color: pink;
+    padding-bottom: 19px;
+    font-weight: 100;
+    font-size: 20px;
+    text-decoration: none;
+}
+/*font-weight & letter-spacing*/
+
+.contact-nav{
+    display:block;
+    align-items: center;
+}
+
+.contact-nav a{
+    color: #fff;
+    padding-left:50px;
+    font-weight: 100;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.4s, letter-spacing 0.4s;
+}
+
+.contact-nav a:hover{
+    color: pink;
+    padding-left:50px;
+    font-weight: 300;
+    font-size: 20px;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.contact-nav p{
+    letter-spacing: 1px;
+    color: #fff;
+    padding-left:50px;
+    font-weight: 100;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.contact-nav i{
+    padding-left: 10px;
+}
